@@ -23,6 +23,12 @@ class PostController extends Controller
 {
 // ホーム画面に遷移
    public function index() {
+
+    $menus =Menu::find([22,23,24]);
+
+    return view('index')
+    ->with(['menus' => $menus]);
+
    }
 
 // メニュー情報画面に遷移

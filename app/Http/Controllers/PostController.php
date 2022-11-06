@@ -24,7 +24,7 @@ class PostController extends Controller
 // ホーム画面に遷移
    public function index() {
 
-    $menus =Menu::find([29,30,31]);
+    $menus =Menu::find([22,23,24]);
 
     return view('index')
     ->with(['menus' => $menus]);
